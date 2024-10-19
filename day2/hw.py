@@ -2,4 +2,3 @@ from turtle import *
 
 
 exitonclick()
-
