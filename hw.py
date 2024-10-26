@@ -1,26 +1,18 @@
 
-
-print(20+10)
-print(8+5)
-print(10+15)
-
-
-print(20-16)
-print(15-7)
-print(18-5)
-
-print(8*2)
-print(8*8)
-print(9*9)
-
-print(20/2)
-print(10/5)
-print(20/5)
-
-print(20%2)
-print(10%2)
-print(30%5)
-
-print(20**5)
-print(4**4)
-print(10**5)
+print(variable)
+print(undeclared_variable)
+x = 10
+y = "5"
+print(x + y)
+def my_function():
+print("Missing indentation in function")
+a, b = 10
+print(a, b)
+True = 5
+print(True)
+# Missing comment symbol
+if True
+def add(a, b):
+retur a + b
+variable
+print("Empty statement after variable declaration")
