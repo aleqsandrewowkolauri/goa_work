@@ -1,4 +1,4 @@
-
+0
 print(variable)
 print(undeclared_variable)
 x = 10
