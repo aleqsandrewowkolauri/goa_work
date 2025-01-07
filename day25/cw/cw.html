@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ფოტოების შეცვლა და Alert</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .image {
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1 onclick="showAlert()">დააჭირეთ ნებისმიერ ელემენტს</h1>
+    
+    <div class="container">
+        <img src="photo1.jpg" class="image" onclick="changeImage(this, 'photo2.jpg')" alt="ფოტო 1">
+        <img src="photo3.jpg" class="image" onclick="changeImage(this, 'photo4.jpg')" alt="ფოტო 2">
+        <img src="photo5.jpg" class="image" onclick="changeImage(this, 'photo6.jpg')" alt="ფოტო 3">
+    </div>
+
+    <script>
+        function changeImage(element, newSrc) {
+            element.src = newSrc;
+        }
+
+        function showAlert() {
+            alert("GOA BEST");
+        }
+    </script>
+</body>
+</html>
