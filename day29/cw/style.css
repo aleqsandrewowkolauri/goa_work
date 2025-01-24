@@ -1,0 +1,21 @@
+p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* ID Selector - #header იქნება გამოყენებული მხოლოდ ამ ელემენტზე */
+#header {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    font-size: 24px;
+}
+
+/* Class Selector - .title და .text შეიძლება გამოიყენოთ სხვადასხვა ელემენტებში */
+.title {
+    color: blue;
+}
+
+.text {
+    color: grey;
+    background-color: lightyellow;
+}
