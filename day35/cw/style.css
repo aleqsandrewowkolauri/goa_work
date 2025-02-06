@@ -1,0 +1,11 @@
+/* ცხრილის საზღვრის სტილი */
+table {
+    border-collapse: collapse; /* ცხრილის საზღვრების შეკრება */
+    width: 100%; /* ცხრილის სიგანე */
+}
+
+td {
+    border: 5px solid green; /* მწვანე საზღვარი */
+    padding: 10px; /* padding შორის */
+    text-align: center; /* ტექსტის ცენტრი */
+}
