@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Keyframes Animation</title>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: crimson;
+      position: relative;
+
+      animation: slide 5s linear infinite;
+    }
+
+    @keyframes slide {
+      0% {
+        left: 0;
+      }
+      100% {
+        left: 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>

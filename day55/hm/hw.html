@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>One-Time Animation</title>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: royalblue;
+      position: relative;
+
+      /* Animation: name | duration | timing-function | iteration-count | fill-mode */
+      animation: moveRight 3s ease-in-out 1 forwards;
+    }
+
+    @keyframes moveRight {
+      0% {
+        left: 0;
+      }
+      100% {
+        left: 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>
