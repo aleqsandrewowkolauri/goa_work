@@ -6,5 +6,3 @@ def count_sheeps(sheep):
 def no_space(x):
     return x.replace(" ", "")
 
-def double_integer(i):
-    return i*2

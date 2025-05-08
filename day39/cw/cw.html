@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Box Model Layout</title>
+  <style>
+    .box {
+      width: 794px;
+      height: 160px;
+      padding: 50px 20px;
+      border: 5px solid black;
+      margin: 30px 50px;
+      background-color: lightgreen;
+      box-sizing: content-box;
+    }
+    .content {
+      width: 794px;
+      height: 160px;
+      background-color: #80aabb;
+      text-align: center;
+      line-height: 160px;
+      color: white;
+      font-weight: bold;
+    }
+    body {
+      background-color: #f2c396; /* To show margin */
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="content">794 × 160</div>
+  </div>
+</body>
+</html>

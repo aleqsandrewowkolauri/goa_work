@@ -65,10 +65,3 @@ def repeat_str(repeat, string):
 def remove_char(s):
     return s[1:-1]
 
-
-# 11)
-
-result=0
-for i in numbers:
-        result+=i**2
-return result
