@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Alert Form</title>
+</head>
+<body>
+  <form id="alertForm">
+    <label for="textInput">Enter something:</label>
+    <input type="text" id="textInput" name="textInput">
+    <button type="submit">Show Alert</button>
+  </form>
+
+  <script>
+    document.getElementById('alertForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevents form from submitting
+      const inputValue = document.getElementById('textInput').value;
+      alert(inputValue);
+    });
+  </script>
+</body>
+</html>
