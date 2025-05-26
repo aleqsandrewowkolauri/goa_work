@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>საკლასო დავალება</title>
+</head>
+<body>
+
+  <!-- ფორმა ID-ით -->
+  <form id="myForm">
+    <!-- ინფუთი name ატრიბუტით -->
+    <input type="text" name="myInput" placeholder=>
+    <button type="submit">გაგზავნა</button>
+  </form>
+
+  <script>
+    // ფორმის დაჭერისას ვუშლით დარეფრეშებას და ვაჩვენებთ ინფუთის მნიშვნელობას
+    document.getElementById('myForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // გვერდის გადატვირთვის თავიდან აცილება
+      const inputValue = event.target.myInput.value;
+      alert("შეყვანილი მნიშვნელობაა: " + inputValue);
+    });
+  </script>
+
+</body>
+</html>

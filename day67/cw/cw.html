@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Confirm Box Example</title>
+  <script>
+    function userOperations() {
+      // confirm box-ის ორი შედეგი
+      const response1 = confirm("გსურთ გაგრძელება?");
+      const response2 = confirm("დარწმუნებული ხართ თქვენს არჩევანში?");
+
+      // ლოგიკური ოპერაციების შედეგების დაბეჭდვა
+      console.log("AND ოპერაციის შედეგი:", response1 && response2);
+      console.log("OR ოპერაციის შედეგი:", response1 || response2);
+    }
+
+    // ფუნქციის გამოძახება ვებსაიტის ჩატვირთვისას
+    window.onload = userOperations;
+  </script>
+</head>
+<body>
+  <h1>დავალება: Confirm Box და ლოგიკური ოპერაციები</h1>
+</body>
+</html>
+
