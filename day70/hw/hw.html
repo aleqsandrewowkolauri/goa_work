@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Change Background Color</title>
+  <style>
+    #colorBox {
+      width: 200px;
+      height: 200px;
+      background-color: lightgray;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="colorBox"></div>
+  <button onclick="changeColor()">Change Color</button>
+
+  <script>
+    function changeColor() {
+      // You can change this color to any valid CSS color
+      document.getElementById("colorBox").style.backgroundColor = "skyblue";
+    }
+  </script>
+
+</body>
+</html>

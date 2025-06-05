@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>საკლასო დავალება</title>
+  <script>
+    function userLoop() {
+      const first = Number(prompt("შეიყვანეთ პირველი რიცხვი:"));
+      const second = Number(prompt("შეიყვანეთ მეორე რიცხვი:"));
+
+      if (isNaN(first) || isNaN(second)) {
+        console.log("გთხოვთ, შეიყვანოთ სწორი რიცხვები.");
+        return;
+      }
+
+      const start = Math.min(first, second);
+      const end = Math.max(first, second);
+
+      for (let i = start; i <= end; i++) {
+        console.log(i);
+      }
+    }
+
+    window.onload = function () {
+      userLoop();
+    };
+  </script>
+</head>
+<body>
+  <h1>მოგესალმებით!</h1>
+</body>
+</html>
