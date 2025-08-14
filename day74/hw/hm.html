@@ -1,0 +1,15 @@
+<div id="content">
+  <p>First child</p>
+  <p>Second child</p>
+</div>
+
+<script>
+  const contentDiv = document.getElementById("content");
+
+  if (contentDiv.firstChild) {
+    let firstElement = contentDiv.firstElementChild;
+    if (firstElement) {
+      contentDiv.removeChild(firstElement);
+    }
+  }
+</script>

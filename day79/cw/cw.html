@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Change Image with for Loop</title>
+</head>
+<body>
+
+  <img src="old-image.jpg" alt="Old Image">
+  <img src="second-image.jpg" alt="Second Image">
+
+  <script>
+    // Select all <img> tags
+    const images = document.getElementsByTagName('img');
+
+    // Loop through <img> elements
+    for (let i = 0; i < images.length; i++) {
+      // When the first image is found, change its src and break the loop
+      images[i].src = "https://via.placeholder.com/150";
+      break;
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Paragraph Word Counter</title>
+</head>
+<body>
+
+  <p>This is the first paragraph.</p>
+  <p>Here is the second one with more words.</p>
+  <p>And a third paragraph is here.</p>
+
+  <script>
+    // Select all <p> elements
+    const paragraphs = document.getElementsByTagName('p');
+
+    let totalWords = 0;
+
+    // Loop through each <p> and count words
+    for (let i = 0; i < paragraphs.length; i++) {
+      // Get text content and split by spaces
+      const words = paragraphs[i].textContent.trim().split(/\s+/);
+      totalWords += words.length;
+    }
+
+    console.log("Total word count in all <p> tags:", totalWords);
+  </script>
+
+</body>
+</html>
